@@ -9,14 +9,11 @@ int main(void)
 
 	for (A = 48; A <= 57; A++)
 	{
-		if (A == 57)
+		putchar(A);
+		if (A < 57)
 		{
-			putchar(A);
-		}
-		else
-		{
-			putchar(A);
 			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
