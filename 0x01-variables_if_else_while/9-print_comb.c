@@ -9,9 +9,15 @@ int main(void)
 
 	for (A = 48; A <= 57; A++)
 	{
-		putchar(A);
-		putchar(',');
-		putchar(' ');
+		if (A == 57)
+		{
+			putchar(A);
+		}
+		else
+		{
+			putchar(A);
+			putchar(',');
+		}
 	}
 	putchar('\n');
 	return (0);
