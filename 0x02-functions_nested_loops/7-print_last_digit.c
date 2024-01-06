@@ -1,10 +1,13 @@
 #include "main.h"
 /**
  * print_last_digit - print last digit of a number
- * @int: type int
+ * @x : in being checked
  * Return: value of last number
  */
-int print_last_digit(int)
+int print_last_digit(int x)
 {
-	return (int % 10);
+	int num;
+
+	num = x % 10;
+	return (num);
 }
