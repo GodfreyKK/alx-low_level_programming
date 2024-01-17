@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print 1- 100 and replace multiples of 3 with Fizz and 5 with Buzz
+ * main - print 1- 10
  * Return: 0
  */
 
