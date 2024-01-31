@@ -32,5 +32,4 @@ char *_strdup(char *str)
 	}
 	dup[count] = '\0';
 	return (dup);
-	free(dup);
 }
