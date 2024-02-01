@@ -4,7 +4,7 @@
  * main - calculate the least amount of change needed uusing 25,10,5,2,1
  * @argc: argument count
  * @argv: argument vector
- * Return: 1 for error and 0 for normal
+ * Return: 1 for error and 0 for normal and -1 for negative
  */
 
 int main(int argc, char *argv[])
@@ -18,7 +18,12 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	cents = atoi(argv[1]);
-
+	
+	if (cents < 0)
+	{
+		printf("0\n");
+		return (-1);
+	}
 	a = cents / 25;
 	cents %= 25;
 	b = cents / 10;
