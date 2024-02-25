@@ -43,6 +43,10 @@ if (n > 0)
 		printf("\n");
 	}
 }
+else
+{
+	printf("\n");
+}
 va_end(pr_num);
 }
 
