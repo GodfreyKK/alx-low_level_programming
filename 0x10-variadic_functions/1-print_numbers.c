@@ -14,7 +14,8 @@ void print_numbers(const char *separator, unsigned int n, ...)
 	va_list pr_num;
 
 	va_start(pr_num, n);
-
+if (n > 0)
+{
 	if (separator != NULL)
 	{
 		while (i < n - 1)
@@ -41,6 +42,7 @@ void print_numbers(const char *separator, unsigned int n, ...)
 		}
 		printf("\n");
 	}
-	va_end(pr_num);
+}
+va_end(pr_num);
 }
 
